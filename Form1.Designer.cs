@@ -51,6 +51,11 @@
 			comboBox2 = new ComboBox();
 			textBox_floats = new TextBox();
 			tabPage5 = new TabPage();
+			label55 = new Label();
+			label54 = new Label();
+			label53 = new Label();
+			label52 = new Label();
+			label51 = new Label();
 			button51 = new Button();
 			numericUpDown51 = new NumericUpDown();
 			textBox51 = new TextBox();
@@ -301,6 +306,11 @@
 			// 
 			// tabPage5
 			// 
+			tabPage5.Controls.Add(label55);
+			tabPage5.Controls.Add(label54);
+			tabPage5.Controls.Add(label53);
+			tabPage5.Controls.Add(label52);
+			tabPage5.Controls.Add(label51);
 			tabPage5.Controls.Add(button51);
 			tabPage5.Controls.Add(numericUpDown51);
 			tabPage5.Controls.Add(textBox51);
@@ -310,6 +320,56 @@
 			tabPage5.TabIndex = 4;
 			tabPage5.Text = "Пятая";
 			tabPage5.UseVisualStyleBackColor = true;
+			// 
+			// label55
+			// 
+			label55.AutoSize = true;
+			label55.ForeColor = SystemColors.ControlDark;
+			label55.Location = new Point(270, 74);
+			label55.Name = "label55";
+			label55.Size = new Size(99, 15);
+			label55.TabIndex = 7;
+			label55.Text = "0,0001 - 417,742 с";
+			// 
+			// label54
+			// 
+			label54.AutoSize = true;
+			label54.ForeColor = SystemColors.ControlDark;
+			label54.Location = new Point(270, 60);
+			label54.Name = "label54";
+			label54.Size = new Size(99, 15);
+			label54.TabIndex = 6;
+			label54.Text = "0,00025 - 70,770 с";
+			// 
+			// label53
+			// 
+			label53.AutoSize = true;
+			label53.ForeColor = SystemColors.ControlDark;
+			label53.Location = new Point(270, 45);
+			label53.Name = "label53";
+			label53.Size = new Size(93, 15);
+			label53.TabIndex = 5;
+			label53.Text = "0,0005 - 18,530 с";
+			// 
+			// label52
+			// 
+			label52.AutoSize = true;
+			label52.ForeColor = SystemColors.ControlDark;
+			label52.Location = new Point(270, 30);
+			label52.Name = "label52";
+			label52.Size = new Size(69, 15);
+			label52.TabIndex = 4;
+			label52.Text = "0,001 - 5,1 с";
+			// 
+			// label51
+			// 
+			label51.AutoSize = true;
+			label51.ForeColor = SystemColors.ControlDark;
+			label51.Location = new Point(270, 18);
+			label51.Name = "label51";
+			label51.Size = new Size(75, 15);
+			label51.TabIndex = 3;
+			label51.Text = "0,01 - 0,159 с";
 			// 
 			// button51
 			// 
@@ -449,5 +509,10 @@
 		private Button button4;
 		private TextBox textBox62;
 		private TextBox textBox61;
+		private Label label51;
+		private Label label52;
+		private Label label53;
+		private Label label54;
+		private Label label55;
 	}
 }
