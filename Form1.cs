@@ -177,10 +177,18 @@ namespace dotnet_l3
 			if (a > b) { (a, b) = (b, a); }
 
 			for (; a <= b; a += h) {
-				//f(x) = sin(x) / (| x | +1)
-				var fx = Math.Sin(a) / (Math.Abs(a) + 1);
-				this.textBox7out.Text += $"x = {a}, f(x) = {fx}\r\n";
+				tab7_calc_and_print(a);
 			}
+			if (a > b) { // если при табулировании значение b было перешагнуто
+				tab7_calc_and_print(b);
+			}
+		}
+
+		private void tab7_calc_and_print(double x)
+		{
+			//f(x) = sin(x) / (| x | +1)
+			var fx = Math.Sin(x) / (Math.Abs(x) + 1);
+			this.textBox7out.Text += $"x = {x:N3}, f(x) = {fx:N3}\r\n";
 		}
 	}
 }

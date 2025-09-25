@@ -64,6 +64,7 @@
 			textBox62 = new TextBox();
 			textBox61 = new TextBox();
 			tabPage7 = new TabPage();
+			button7calc = new Button();
 			label7out = new Label();
 			label7h = new Label();
 			label7b = new Label();
@@ -72,7 +73,6 @@
 			textBox7h = new TextBox();
 			textBox7b = new TextBox();
 			textBox7a = new TextBox();
-			button7calc = new Button();
 			tabControl1.SuspendLayout();
 			tabPage1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
@@ -469,6 +469,16 @@
 			tabPage7.Text = "Седьмая";
 			tabPage7.UseVisualStyleBackColor = true;
 			// 
+			// button7calc
+			// 
+			button7calc.Location = new Point(200, 74);
+			button7calc.Name = "button7calc";
+			button7calc.Size = new Size(120, 23);
+			button7calc.TabIndex = 8;
+			button7calc.Text = "Протабулировать";
+			button7calc.UseVisualStyleBackColor = true;
+			button7calc.Click += button7calc_Click;
+			// 
 			// label7out
 			// 
 			label7out.AutoSize = true;
@@ -511,7 +521,8 @@
 			textBox7out.Multiline = true;
 			textBox7out.Name = "textBox7out";
 			textBox7out.ReadOnly = true;
-			textBox7out.Size = new Size(137, 340);
+			textBox7out.ScrollBars = ScrollBars.Vertical;
+			textBox7out.Size = new Size(186, 340);
 			textBox7out.TabIndex = 3;
 			// 
 			// textBox7h
@@ -534,16 +545,6 @@
 			textBox7a.Name = "textBox7a";
 			textBox7a.Size = new Size(100, 23);
 			textBox7a.TabIndex = 0;
-			// 
-			// button7calc
-			// 
-			button7calc.Location = new Point(151, 74);
-			button7calc.Name = "button7calc";
-			button7calc.Size = new Size(169, 23);
-			button7calc.TabIndex = 8;
-			button7calc.Text = "Протабулировать";
-			button7calc.UseVisualStyleBackColor = true;
-			button7calc.Click += button7calc_Click;
 			// 
 			// Form1
 			// 
