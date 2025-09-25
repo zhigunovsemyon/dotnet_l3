@@ -28,7 +28,10 @@ namespace dotnet_l3
 		private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			var i = this.comboBox1.SelectedIndex;
-			this.textBox3.Text = this.comboBox1.Items[i].ToString();
+			var src = this.comboBox1.Items[i];
+			if (src != null) {
+				this.textBox3.Text = src.ToString();
+			}
 		}
 
 		private void button_plus_Click(object sender, EventArgs e)
