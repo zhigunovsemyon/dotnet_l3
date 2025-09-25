@@ -64,6 +64,15 @@
 			textBox62 = new TextBox();
 			textBox61 = new TextBox();
 			tabPage7 = new TabPage();
+			label7out = new Label();
+			label7h = new Label();
+			label7b = new Label();
+			label7a = new Label();
+			textBox7out = new TextBox();
+			textBox7h = new TextBox();
+			textBox7b = new TextBox();
+			textBox7a = new TextBox();
+			button7calc = new Button();
 			tabControl1.SuspendLayout();
 			tabPage1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
@@ -73,6 +82,7 @@
 			tabPage5.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)numericUpDown51).BeginInit();
 			tabPage6.SuspendLayout();
+			tabPage7.SuspendLayout();
 			SuspendLayout();
 			// 
 			// tabControl1
@@ -443,12 +453,96 @@
 			// 
 			// tabPage7
 			// 
+			tabPage7.Controls.Add(button7calc);
+			tabPage7.Controls.Add(label7out);
+			tabPage7.Controls.Add(label7h);
+			tabPage7.Controls.Add(label7b);
+			tabPage7.Controls.Add(label7a);
+			tabPage7.Controls.Add(textBox7out);
+			tabPage7.Controls.Add(textBox7h);
+			tabPage7.Controls.Add(textBox7b);
+			tabPage7.Controls.Add(textBox7a);
 			tabPage7.Location = new Point(4, 24);
 			tabPage7.Name = "tabPage7";
 			tabPage7.Size = new Size(792, 422);
 			tabPage7.TabIndex = 6;
 			tabPage7.Text = "Седьмая";
 			tabPage7.UseVisualStyleBackColor = true;
+			// 
+			// label7out
+			// 
+			label7out.AutoSize = true;
+			label7out.Location = new Point(7, 56);
+			label7out.Name = "label7out";
+			label7out.Size = new Size(42, 15);
+			label7out.TabIndex = 7;
+			label7out.Text = "Вывод";
+			// 
+			// label7h
+			// 
+			label7h.AutoSize = true;
+			label7h.Location = new Point(220, 10);
+			label7h.Name = "label7h";
+			label7h.Size = new Size(14, 15);
+			label7h.TabIndex = 6;
+			label7h.Text = "h";
+			// 
+			// label7b
+			// 
+			label7b.AutoSize = true;
+			label7b.Location = new Point(114, 10);
+			label7b.Name = "label7b";
+			label7b.Size = new Size(14, 15);
+			label7b.TabIndex = 5;
+			label7b.Text = "b";
+			// 
+			// label7a
+			// 
+			label7a.AutoSize = true;
+			label7a.Location = new Point(8, 10);
+			label7a.Name = "label7a";
+			label7a.Size = new Size(13, 15);
+			label7a.TabIndex = 4;
+			label7a.Text = "a";
+			// 
+			// textBox7out
+			// 
+			textBox7out.Location = new Point(8, 74);
+			textBox7out.Multiline = true;
+			textBox7out.Name = "textBox7out";
+			textBox7out.ReadOnly = true;
+			textBox7out.Size = new Size(137, 340);
+			textBox7out.TabIndex = 3;
+			// 
+			// textBox7h
+			// 
+			textBox7h.Location = new Point(220, 28);
+			textBox7h.Name = "textBox7h";
+			textBox7h.Size = new Size(100, 23);
+			textBox7h.TabIndex = 2;
+			// 
+			// textBox7b
+			// 
+			textBox7b.Location = new Point(114, 28);
+			textBox7b.Name = "textBox7b";
+			textBox7b.Size = new Size(100, 23);
+			textBox7b.TabIndex = 1;
+			// 
+			// textBox7a
+			// 
+			textBox7a.Location = new Point(8, 28);
+			textBox7a.Name = "textBox7a";
+			textBox7a.Size = new Size(100, 23);
+			textBox7a.TabIndex = 0;
+			// 
+			// button7calc
+			// 
+			button7calc.Location = new Point(151, 74);
+			button7calc.Name = "button7calc";
+			button7calc.Size = new Size(169, 23);
+			button7calc.TabIndex = 8;
+			button7calc.Text = "Протабулировать";
+			button7calc.UseVisualStyleBackColor = true;
 			// 
 			// Form1
 			// 
@@ -473,6 +567,8 @@
 			((System.ComponentModel.ISupportInitialize)numericUpDown51).EndInit();
 			tabPage6.ResumeLayout(false);
 			tabPage6.PerformLayout();
+			tabPage7.ResumeLayout(false);
+			tabPage7.PerformLayout();
 			ResumeLayout(false);
 		}
 
@@ -514,5 +610,14 @@
 		private Label label53;
 		private Label label54;
 		private Label label55;
+		private Label label7out;
+		private Label label7h;
+		private Label label7b;
+		private Label label7a;
+		private TextBox textBox7out;
+		private TextBox textBox7h;
+		private TextBox textBox7b;
+		private TextBox textBox7a;
+		private Button button7calc;
 	}
 }
