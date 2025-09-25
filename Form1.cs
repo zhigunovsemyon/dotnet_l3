@@ -167,6 +167,20 @@ namespace dotnet_l3
 				tab7_print_invalid();
 				return;
 			}
+
+			if (h <= 0) {
+				this.textBox7out.Text = "h должен быть больше нуля!";
+				return;
+			}
+
+			//https://hyr.mn/swapping-numbers/
+			if (a > b) { (a, b) = (b, a); }
+
+			for (; a <= b; a += h) {
+				//f(x) = sin(x) / (| x | +1)
+				var fx = Math.Sin(a) / (Math.Abs(a) + 1);
+				this.textBox7out.Text += $"x = {a}, f(x) = {fx}\r\n";
+			}
 		}
 	}
 }
