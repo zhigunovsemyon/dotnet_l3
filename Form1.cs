@@ -176,10 +176,10 @@ namespace dotnet_l3
 			//https://hyr.mn/swapping-numbers/
 			if (a > b) { (a, b) = (b, a); }
 
-			for (; a <= b; a += h) {
+			for (; a < b; a += h) {
 				tab7_calc_and_print(a);
 			}
-			if (a > b) { // если при табулировании значение b было перешагнуто
+			if (a >= b) { // если при табулировании значение b было перешагнуто
 				tab7_calc_and_print(b);
 			}
 		}
