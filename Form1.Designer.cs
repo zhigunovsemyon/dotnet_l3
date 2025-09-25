@@ -55,10 +55,10 @@
 			numericUpDown51 = new NumericUpDown();
 			textBox51 = new TextBox();
 			tabPage6 = new TabPage();
-			tabPage7 = new TabPage();
-			textBox61 = new TextBox();
-			textBox62 = new TextBox();
 			button4 = new Button();
+			textBox62 = new TextBox();
+			textBox61 = new TextBox();
+			tabPage7 = new TabPage();
 			tabControl1.SuspendLayout();
 			tabPage1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
@@ -296,7 +296,7 @@
 			textBox_floats.Multiline = true;
 			textBox_floats.Name = "textBox_floats";
 			textBox_floats.ScrollBars = ScrollBars.Both;
-			textBox_floats.Size = new Size(268, 156);
+			textBox_floats.Size = new Size(268, 319);
 			textBox_floats.TabIndex = 0;
 			// 
 			// tabPage5
@@ -338,7 +338,7 @@
 			textBox51.Multiline = true;
 			textBox51.Name = "textBox51";
 			textBox51.ScrollBars = ScrollBars.Both;
-			textBox51.Size = new Size(250, 105);
+			textBox51.Size = new Size(250, 340);
 			textBox51.TabIndex = 0;
 			// 
 			// tabPage6
@@ -353,23 +353,15 @@
 			tabPage6.Text = "Шестая";
 			tabPage6.UseVisualStyleBackColor = true;
 			// 
-			// tabPage7
+			// button4
 			// 
-			tabPage7.Location = new Point(4, 24);
-			tabPage7.Name = "tabPage7";
-			tabPage7.Size = new Size(792, 422);
-			tabPage7.TabIndex = 6;
-			tabPage7.Text = "Седьмая";
-			tabPage7.UseVisualStyleBackColor = true;
-			// 
-			// textBox61
-			// 
-			textBox61.Location = new Point(20, 90);
-			textBox61.Multiline = true;
-			textBox61.Name = "textBox61";
-			textBox61.ScrollBars = ScrollBars.Both;
-			textBox61.Size = new Size(266, 216);
-			textBox61.TabIndex = 0;
+			button4.Location = new Point(20, 17);
+			button4.Name = "button4";
+			button4.Size = new Size(206, 23);
+			button4.TabIndex = 2;
+			button4.Text = "button4";
+			button4.UseVisualStyleBackColor = true;
+			button4.Click += button4_Click;
 			// 
 			// textBox62
 			// 
@@ -380,15 +372,23 @@
 			textBox62.Size = new Size(308, 216);
 			textBox62.TabIndex = 1;
 			// 
-			// button4
+			// textBox61
 			// 
-			button4.Location = new Point(20, 17);
-			button4.Name = "button4";
-			button4.Size = new Size(206, 23);
-			button4.TabIndex = 2;
-			button4.Text = "button4";
-			button4.UseVisualStyleBackColor = true;
-			button4.Click += button4_Click;
+			textBox61.Location = new Point(20, 90);
+			textBox61.Multiline = true;
+			textBox61.Name = "textBox61";
+			textBox61.ScrollBars = ScrollBars.Both;
+			textBox61.Size = new Size(266, 216);
+			textBox61.TabIndex = 0;
+			// 
+			// tabPage7
+			// 
+			tabPage7.Location = new Point(4, 24);
+			tabPage7.Name = "tabPage7";
+			tabPage7.Size = new Size(792, 422);
+			tabPage7.TabIndex = 6;
+			tabPage7.Text = "Седьмая";
+			tabPage7.UseVisualStyleBackColor = true;
 			// 
 			// Form1
 			// 

@@ -112,6 +112,7 @@ namespace dotnet_l3
 
 		private void button51_Click(object sender, EventArgs e)
 		{
+			var start_time = System.DateTime.UtcNow;
 			this.textBox51.Clear();
 
 			var n = this.numericUpDown51.Value;
@@ -119,11 +120,14 @@ namespace dotnet_l3
 			do {
 				decimal part = 1 / x++;
 				if (part < n)
-					return;
+					break;
 				sum += part;
 				this.textBox51.Text += $"{sum}\r\n";
 				this.textBox51.Refresh();
 			} while (true);
+
+			var duration = System.DateTime.UtcNow - start_time;
+			MessageBox.Show(duration.TotalSeconds.ToString("N3") + " секунд");
 		}
 
 		private void button4_Click(object sender, EventArgs e)
