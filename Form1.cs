@@ -135,10 +135,37 @@ namespace dotnet_l3
 			var lines = this.textBox61.Lines;
 			for (var i = lines.Length - 1; i >= 0; i--) {
 				decimal dumb;
-				if (decimal.TryParse(lines[i], out dumb)){
+				if (decimal.TryParse(lines[i], out dumb)) {
 					continue;
 				}
 				this.textBox62.AppendText($"{lines[i]}\r\n");
+			}
+		}
+
+		private void tab7_print_invalid()
+		{
+			this.textBox7out.Text = "Неправильный ввод";
+		}
+
+		private void button7calc_Click(object sender, EventArgs e)
+		{
+			this.textBox7out.Clear();
+			double a, b, h;
+			var box_a = this.textBox7a.Text;
+			var box_b = this.textBox7b.Text;
+			var box_h = this.textBox7h.Text;
+
+			if (!double.TryParse(box_a, out a)) {
+				tab7_print_invalid();
+				return;
+			}
+			if (!double.TryParse(box_b, out b)) {
+				tab7_print_invalid();
+				return;
+			}
+			if (!double.TryParse(box_h, out h)) {
+				tab7_print_invalid();
+				return;
 			}
 		}
 	}

@@ -543,6 +543,7 @@
 			button7calc.TabIndex = 8;
 			button7calc.Text = "Протабулировать";
 			button7calc.UseVisualStyleBackColor = true;
+			button7calc.Click += button7calc_Click;
 			// 
 			// Form1
 			// 
